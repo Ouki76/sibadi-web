@@ -1,1 +1,45 @@
-# sibadi-web
+# Sibadi Web
+Репозиторий содержит веб-приложение, разработанное на Rust, для университета
+[**Сибади**](https://sibadi.org/)
+
+## Приложение в магазинах
+- [ ] App Store
+- [ ] Play Market
+
+## Сборка
+Установка Rust
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Установка Dioxus CLI
+```bash
+cargo install dioxus-cli
+```
+
+Зависимости для сборки проекта на Linux | WSL
+```bash
+sudo apt update && \
+sudo apt install libwebkit2gtk-4.1-dev \
+  build-essential \
+  curl \
+  wget \
+  file \
+  libxdo-dev \
+  libssl-dev \
+  libayatana-appindicator3-dev \
+  librsvg2-dev
+```
+
+Сборка проекта
+```bash
+dx build
+```
+
+Отладка проекта
+```bash
+dx serve
+```
+
+## Использованные библиотеки и фреймворки
+- [**Dioxus**](https://dioxuslabs.com/)
