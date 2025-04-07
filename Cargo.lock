@@ -3826,6 +3826,7 @@ name = "sibadi-web"
 version = "0.1.0"
 dependencies = [
  "dioxus",
+ "web-sys",
 ]
 
 [[package]]

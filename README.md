@@ -43,3 +43,4 @@ dx serve
 
 ## Использованные библиотеки и фреймворки
 - [**Dioxus**](https://dioxuslabs.com/)
+- [**web-sys**](https://crates.io/crates/web-sys)
