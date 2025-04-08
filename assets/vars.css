@@ -1,4 +1,9 @@
 :root {
+  --main-color: #2378ad;
+
+  --color: #000000;
+  --background-color: #ffffff;
+
   --block-background-color: #222222;
 
   --rounding: 9px;

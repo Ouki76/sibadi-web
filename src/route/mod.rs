@@ -51,19 +51,17 @@ fn AppLayout() -> Element {
                     .unwrap()
                     .style()
                     .set_property("padding-bottom", 
-                        &format!("calc({}px + var(--padding) * 4)", navbar_height))
+                        &format!("calc({}px + var(--padding) * 2)", navbar_height))
                     .unwrap();
             }
         }
     });
 
     rsx! {
-        div {
-            id: "content",
+        div { id: "content",
             Outlet::<Route> {}
         }
-        nav {
-            id: "navbar",
+        nav { id: "navbar",
             Link { to: Route::Home {}, "Home" }
             Link { to: Route::Rasp {}, "Rasp" }
         }
@@ -73,10 +71,7 @@ fn AppLayout() -> Element {
 #[component]
 fn SetupLayout() -> Element {
     rsx! {
-        div {
-            id: "content",
-            Outlet::<Route> {}
-        }
+        Outlet::<Route> {}
     }
 }
 
