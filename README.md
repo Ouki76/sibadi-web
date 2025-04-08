@@ -43,4 +43,7 @@ dx serve
 
 ## Использованные библиотеки и фреймворки
 - [**Dioxus**](https://dioxuslabs.com/)
+- [**reqwest**](https://crates.io/crates/reqwest/)
+- [**serde**](https://serde.rs/)
+- [**serde_json**](https://crates.io/crates/serde_json)
 - [**web-sys**](https://crates.io/crates/web-sys)

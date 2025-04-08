@@ -1,6 +1,8 @@
 use dioxus::prelude::*;
 
 mod route;
+mod handlers;
+mod types;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 
