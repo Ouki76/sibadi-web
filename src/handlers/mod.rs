@@ -1,10 +1,12 @@
 use dioxus::prelude::*;
 
+pub mod storage;
+
 #[component]
 pub fn ResourceHandler<T: Clone + 'static + std::cmp::PartialEq>(
     resource: Option<Option<T>>, 
-    on_data: fn(T) -> Element) 
--> Element {
+    on_data: fn(T) -> Element
+) -> Element {
     rsx! {
         match resource {
             Some(Some(data)) => on_data(data),

@@ -7,7 +7,7 @@
 - [ ] Play Market
 
 ## Сборка
-Установка Rust
+Установка [**Rust**](https://www.rust-lang.org/)
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -41,9 +41,26 @@ dx build
 dx serve
 ```
 
+## Тесты
+Установка [**wasm-pack**](https://github.com/rustwasm/wasm-pack)
+```bash
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+```
+
+Запустить тесты можно с помощью
+```bash
+wasm-pack test --headless --firefox
+```
+
+Или для Chrome
+```bash
+wasm-pack test --headless --chrome
+```
+
 ## Использованные библиотеки и фреймворки
 - [**Dioxus**](https://dioxuslabs.com/)
 - [**reqwest**](https://crates.io/crates/reqwest/)
 - [**serde**](https://serde.rs/)
 - [**serde_json**](https://crates.io/crates/serde_json)
 - [**web-sys**](https://crates.io/crates/web-sys)
+- [**wasm-bindgen-test**](https://crates.io/crates/wasm-bindgen-test)

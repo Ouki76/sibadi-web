@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 use crate::{
-    handlers::ResourceHandler,
+    handlers::{storage::{self, Storage}, ResourceHandler},
     types::GroupsResponse
 };
 
@@ -46,7 +46,10 @@ pub fn GroupSelector() -> Element {
                 on_data: move |wrapper| {
                     rsx! {
                         for group in wrapper.data {
-                            p {
+                            button {
+                                onclick: move |_| {
+                                    storage::Local::set("group", &group.id.to_string());
+                                },
                                 "{group.name}"
                             }
                         }
