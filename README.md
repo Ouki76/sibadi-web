@@ -42,6 +42,12 @@ dx serve
 ```
 
 ## Тесты
+### Для компонентов
+```bash
+cargo test
+```
+
+### Для модулей
 Установка [**wasm-pack**](https://github.com/rustwasm/wasm-pack)
 ```bash
 curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
@@ -63,4 +69,8 @@ wasm-pack test --headless --chrome
 - [**serde**](https://serde.rs/)
 - [**serde_json**](https://crates.io/crates/serde_json)
 - [**web-sys**](https://crates.io/crates/web-sys)
+
+## Использованные библиотеки и фреймворки для тестов
+- [**dioxus-ssr**](https://crates.io/crates/dioxus-ssr)
+- [**pretty_assertions**](https://crates.io/crates/pretty_assertions)
 - [**wasm-bindgen-test**](https://crates.io/crates/wasm-bindgen-test)
